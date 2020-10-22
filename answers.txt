@@ -1,0 +1,11 @@
+3.
+   A.
+   B.The difference between DOM and HTML is that DOM is dynamic and HTML is static.
+   C.When I first enter the page the boxes are all different colors.
+   D.After turning java off the boxes become the same color and nothing happens whenever you click one of them.
+4.
+   A.The overall layout of the page is made from the html. The colors are from the CSS. The Dynamic elements like the changing of the colors, keeping of the score, and being able to change difficulty are from the JavaScript.
+   B.Whenever I get the right answer the css changes to that color.
+   C.If I press easy the last three colors still show up in the code. If I get the right answer then the header background also changes to that color.
+   D.   
+6. I used observational skills by looking at the code after I would press something.

@@ -27,7 +27,7 @@ function init(){
 	}
 	reset();
 }
-
+//Keeps the score or allows the score to go up and down
 function setupModeButtons(){
 	for(var i = 0; i < modeButtons.length; i++){
 		modeButtons[i].addEventListener("click", function(){
@@ -39,7 +39,7 @@ function setupModeButtons(){
 		});
 	}
 }
-
+//changes the number of squares visible when changing from easy to hard.
 function setupSquares(){
 	for(var i = 0; i < squares.length; i++){
 	//add click listeners to squares
@@ -70,7 +70,7 @@ function setupSquares(){
 		});
 	}
 }
-
+//script for what happens when you get the answer right or wrong
 
 async function updateColorName(){
 	const regex = /\([^\)]+\)/g; 
@@ -91,7 +91,7 @@ async function updateColorName(){
 		colorDisplay.textContent = colorData.name.value + "-ish"; 
 	}
 }
-
+//Have no idea
 function reset(){
 	resetPressed = true;
 	colors = generateRandomColors(numSquares);
@@ -116,7 +116,7 @@ function reset(){
 resetButton.addEventListener("click", function(){
 	reset();
 })
-
+ //Resets the colors
 function changeColors(color){
 	//loop through all squares
 	for(var i = 0; i < squares.length; i++){
@@ -124,12 +124,12 @@ function changeColors(color){
 		squares[i].style.background = color;
 	}
 }
-
+//Changes the colors
 function pickColor(){
 	var random = Math.floor(Math.random() * colors.length);
 	return colors[random];
 }
-
+---
 function generateRandomColors(num){
 	//make an array
 	var arr = []
@@ -141,7 +141,7 @@ function generateRandomColors(num){
 	//return that array
 	return arr;
 }
-
+//Randomizes the colors
 function randomColor(){
 	//pick a "red" from 0 - 255
 	var r = Math.floor(Math.random() * 256);
@@ -151,3 +151,4 @@ function randomColor(){
 	var b = Math.floor(Math.random() * 256);
 	return "rgb(" + r + ", " + g + ", " + b + ")";
 }
+//Sets the range for what colors can be made
